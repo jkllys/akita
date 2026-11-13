@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="ko" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>아키타 겨울 여행 | 2026. 12. 23 - 12. 27</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Noto Sans KR"', 'sans-serif'],
+          },
+          colors: {
+            winter: {
+              50: '#f0f9ff',
+              100: '#e0f2fe',
+              200: '#bae6fd',
+              300: '#7dd3fc',
+              400: '#38bdf8',
+              500: '#0ea5e9',
+              600: '#0284c7',
+              700: '#0369a1',
+              800: '#075985',
+              900: '#0c4a6e',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    /* Custom Scrollbar for a premium feel */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #f1f1f1;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #bae6fd;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #38bdf8;
+    }
+    .glass-nav {
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    }
+    .hero-bg {
+      background-image: linear-gradient(to bottom, rgba(12, 74, 110, 0.4), rgba(2, 132, 199, 0.6)), url('https://images.unsplash.com/photo-1542640244-7e672d6cb466?q=80&w=2070&auto=format&fit=crop');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-winter-300 selection:text-white">
+
+  <!-- Sticky Navigation -->
+  <nav class="fixed top-0 w-full z-50 glass-nav shadow-sm transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between h-20 items-center">
+        <div class="flex-shrink-0 flex items-center gap-2 cursor-pointer" onclick="window.scrollTo(0,0)">
+          <i class="fa-solid fa-snowflake text-winter-600 text-2xl"></i>
+          <span class="font-bold text-xl tracking-tight text-slate-900">AKITA WINTER</span>
+        </div>
+        <div class="hidden md:flex space-x-8">
+          <a href="#home" class="text-slate-600 hover:text-winter-600 font-medium transition-colors">홈</a>
+          <a href="#transfer" class="text-slate-600 hover:text-winter-600 font-medium transition-colors">환승 가이드</a>
+          <a href="#itinerary" class="text-slate-600 hover:text-winter-600 font-medium transition-colors">상세 일정</a>
+        </div>
+        <!-- Mobile menu button -->
+        <div class="md:hidden flex items-center">
+          <button class="text-slate-600 hover:text-winter-600 focus:outline-none">
+            <i class="fa-solid fa-bars text-2xl"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header id="home" class="hero-bg h-screen relative flex items-center justify-center text-center">
+    <div class="relative z-10 px-4">
+      <p class="text-winter-200 font-semibold tracking-widest uppercase mb-4 drop-shadow-md">Winter Journey to Japan</p>
+      <h1 class="text-5xl md:text-7xl font-black text-white mb-6 tracking-tight drop-shadow-lg">
+        아키타 겨울 여행
+      </h1>
+      <div class="inline-flex items-center gap-3 bg-white/20 backdrop-blur-md border border-white/30 rounded-full py-2 px-6 text-white font-medium shadow-xl">
+        <i class="fa-regular fa-calendar"></i>
+        <span>2026. 12. 23 - 12. 27</span>
+      </div>
+    </div>
+    <!-- Scroll Down Indicator -->
+    <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+      <a href="#transfer" class="text-white/80 hover:text-white transition-colors">
+        <i class="fa-solid fa-chevron-down text-3xl"></i>
+      </a>
+    </div>
+  </header>
+
+  <!-- Transfer Guide Section -->
+  <section id="transfer" class="py-24 bg-white relative">
+    <!-- Decorative background element -->
+    <div class="absolute top-0 left-0 w-full h-full overflow-hidden z-0 pointer-events-none opacity-40">
+      <div class="absolute -top-[20%] -right-[10%] w-[50%] h-[50%] rounded-full bg-winter-50 blur-3xl"></div>
+    </div>
+    
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4">공항 환승 가이드</h2>
+        <p class="text-slate-500 max-w-2xl mx-auto">자가환승으로 공항을 이동해야 하는 특수한 일정입니다. 짐을 직접 찾고 리무진 버스나 전철을 이용해 환승하세요.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+        <!-- Outbound Card -->
+        <div class="bg-slate-50 rounded-3xl p-8 border border-slate-100 shadow-lg hover:shadow-xl transition-shadow relative overflow-hidden">
+          <div class="absolute top-0 right-0 bg-winter-600 text-white text-sm font-bold px-4 py-1 rounded-bl-xl">12.23 (가는 편)</div>
+          <div class="flex items-center gap-4 mb-6 mt-4">
+            <div class="w-14 h-14 rounded-full bg-winter-100 flex items-center justify-center text-winter-600 text-2xl">
+              <i class="fa-solid fa-plane-departure"></i>
+            </div>
+            <div>
+              <h3 class="text-2xl font-bold text-slate-900">인천 <i class="fa-solid fa-arrow-right text-sm text-slate-400 mx-1"></i> 아키타</h3>
+              <p class="text-slate-500 font-medium">오사카 자가환승 (공항 이동)</p>
+            </div>
+          </div>
+          
+          <ul class="space-y-6 relative border-l-2 border-winter-200 ml-6 pl-6 mt-8">
+            <li class="relative">
+              <span class="absolute -left-[35px] bg-winter-500 h-4 w-4 rounded-full border-4 border-slate-50"></span>
+              <p class="font-bold text-slate-900">간사이 공항(KIX) 도착</p>
+              <p class="text-slate-600 text-sm mt-1">입국 심사 후, <b class="text-winter-600">반드시 수하물을 직접 찾아서</b> 밖으로 나옵니다.</p>
+            </li>
+            <li class="relative">
+              <span class="absolute -left-[35px] bg-winter-500 h-4 w-4 rounded-full border-4 border-slate-50"></span>
+              <p class="font-bold text-slate-900">리무진 버스 탑승 (환승)</p>
+              <p class="text-slate-600 text-sm mt-1">제1터미널 1층 건물 밖 <b class="text-winter-600">8번 승강장</b>에서 '이타미 공항행(오사카 공항행)' 탑승.<br>(요금: 2,200엔 / 소요시간: 약 75분)</p>
+            </li>
+            <li class="relative">
+              <span class="absolute -left-[35px] bg-winter-500 h-4 w-4 rounded-full border-4 border-slate-50"></span>
+              <p class="font-bold text-slate-900">이타미 공항(ITM) 도착 및 수속</p>
+              <p class="text-slate-600 text-sm mt-1">항공사 카운터에서 수하물을 다시 부치고 아키타행 비행기에 탑승합니다.</p>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Inbound Card -->
+        <div class="bg-slate-50 rounded-3xl p-8 border border-slate-100 shadow-lg hover:shadow-xl transition-shadow relative overflow-hidden">
+          <div class="absolute top-0 right-0 bg-slate-800 text-white text-sm font-bold px-4 py-1 rounded-bl-xl">12.27 (오는 편)</div>
+          <div class="flex items-center gap-4 mb-6 mt-4">
+            <div class="w-14 h-14 rounded-full bg-slate-200 flex items-center justify-center text-slate-700 text-2xl">
+              <i class="fa-solid fa-plane-arrival"></i>
+            </div>
+            <div>
+              <h3 class="text-2xl font-bold text-slate-900">아키타 <i class="fa-solid fa-arrow-right text-sm text-slate-400 mx-1"></i> 인천</h3>
+              <p class="text-slate-500 font-medium">오사카 자가환승 (공항 2회 이동)</p>
+            </div>
+          </div>
+          
+          <ul class="space-y-6 relative border-l-2 border-slate-300 ml-6 pl-6 mt-8">
+            <li class="relative">
+              <span class="absolute -left-[35px] bg-slate-600 h-4 w-4 rounded-full border-4 border-slate-50"></span>
+              <p class="font-bold text-slate-900">이타미 공항(ITM) 도착</p>
+              <p class="text-slate-600 text-sm mt-1"><b class="text-winter-600">수하물을 직접 찾아서</b> 밖으로 나옵니다.</p>
+            </li>
+            <li class="relative">
+              <span class="absolute -left-[35px] bg-slate-600 h-4 w-4 rounded-full border-4 border-slate-50"></span>
+              <p class="font-bold text-slate-900">산노미야역 행 리무진 탑승</p>
+              <p class="text-slate-600 text-sm mt-1">이타미 공항 승강장에서 '산노미야역 행' 탑승.<br>(소요시간: 약 40분)</p>
+            </li>
+            <li class="relative">
+              <span class="absolute -left-[35px] bg-slate-600 h-4 w-4 rounded-full border-4 border-slate-50"></span>
+              <p class="font-bold text-slate-900">고베 공항(UKB)으로 환승 이동</p>
+              <p class="text-slate-600 text-sm mt-1">산노미야역 하차 후 <b>'포트라이너(무인전철)'</b>로 환승하여 고베 공항으로 이동 및 인천행 수속.</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Itinerary Section -->
+  <section id="itinerary" class="py-24 bg-winter-50">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4">상세 일정표</h2>
+        <p class="text-slate-500">눈 내리는 아키타에서의 특별한 4박 5일</p>
+      </div>
+
+      <div class="space-y-12">
+        
+        <!-- Day 1 -->
+        <div class="bg-white rounded-2xl shadow-md p-6 md:p-8 flex flex-col md:flex-row gap-8 border border-winter-100 hover:border-winter-300 transition-colors">
+          <div class="md:w-1/4 shrink-0">
+            <div class="text-winter-600 font-bold text-lg mb-1">DAY 1</div>
+            <div class="text-slate-800 font-black text-3xl mb-2">12. 23 (수)</div>
+            <div class="text-slate-500 text-sm font-medium">출국 및 료칸 휴식</div>
+          </div>
+          <div class="md:w-3/4">
+            <ul class="space-y-4">
+              <li class="flex gap-4 items-start">
+                <i class="fa-solid fa-utensils text-slate-400 mt-1"></i>
+                <div>
+                  <p class="font-bold text-slate-800">인천공항 푸드코트 조식</p>
+                  <p class="text-slate-500 text-sm">출국 전 든든한 식사</p>
+                </div>
+              </li>
+              <li class="flex gap-4 items-start">
+                <i class="fa-solid fa-bus text-slate-400 mt-1"></i>
+                <div>
+                  <p class="font-bold text-slate-800">공항 간 환승 이동</p>
+                  <p class="text-slate-500 text-sm">간사이 공항(KIX) 도착 후 리무진버스로 이타미 공항(ITM) 이동</p>
+                </div>
+              </li>
+              <li class="flex gap-4 items-start">
+                <i class="fa-solid fa-mug-hot text-slate-400 mt-1"></i>
+                <div>
+                  <p class="font-bold text-slate-800">이타미 공항 내 라운지 중식</p>
+                  <p class="text-slate-500 text-sm">환승 대기 중 라운지에서 점심 식사 및 휴식</p>
+                </div>
+              </li>
+              <li class="flex gap-4 items-start">
+                <i class="fa-solid fa-car text-slate-400 mt-1"></i>
+                <div>
+                  <p class="font-bold text-slate-800">아키타 공항 도착 및 렌터카 수령</p>
+                </div>
+              </li>
+              <li class="flex gap-4 items-start">
+                <i class="fa-solid fa-bed text-winter-600 mt-1"></i>
+                <div>
+                  <p class="font-bold text-slate-800">료칸 체크인 및 석식</p>
+                  <p class="text-slate-500 text-sm">숙소: 大湯温泉 源泉かけ流しの宿 旅館 岡部荘 (오유온천 오카베소) - 온천욕 및 휴식</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Day 2 -->
+        <div class="bg-white rounded-2xl shadow-md p-6 md:p-8 flex flex-col md:flex-row gap-8 border border-winter-100 hover:border-winter-300 transition-colors">
+          <div class="md:w-1/4 shrink-0">
+            <div class="text-winter-600 font-bold text-lg mb-1">DAY 2</div>
+            <div class="text-slate-800 font-black text-3xl mb-2">12. 24 (목)</div>
+            <div class="text-slate-500 text-sm font-medium">자연 및 역사 탐방</div>
+          </div>
+          <div class="md:w-3/4">
+            <ul class="space-y-4">
+              <li class="flex gap-4 items-start">
+                <i class="fa-solid fa-bowl-rice text-slate-400 mt-1"></i>
+                <p class="font-bold text-slate-800 mt-0.5">료칸 조식</p>
+              </li>
+              <li class="flex gap-4 items-start">
+                <i class="fa-solid fa-water text-slate-400 mt-1"></i>
+                <div class="flex-1 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                  <p class="font-bold text-slate-800">도와다 호 관광</p>
+                  <a href="https://buly.kr/3CQzz9Q" target="_blank" class="inline-flex items-center gap-1 text-xs bg-winter-50 text-winter-700 px-3 py-1.5 rounded-full hover:bg-winter-100 transition whitespace-nowrap"><i class="fa-solid fa-map-location-dot"></i> 지도 보기</a>
+                </div>
+              </li>
+              <li class="flex gap-4 items-start">
+                <i class="fa-solid fa-landmark text-slate-400 mt-1"></i>
+                <div class="flex-1 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                  <p class="font-bold text-slate-800">코사카 광산 사무소</p>
+                  <a href="https://buly.kr/7QPBWmJ" target="_blank" class="inline-flex items-center gap-1 text-xs bg-winter-50 text-winter-700 px-3 py-1.5 rounded-full hover:bg-winter-100 transition whitespace-nowrap"><i class="fa-solid fa-map-location-dot"></i> 지도 보기</a>
+                </div>
+              </li>
+              <li class="flex gap-4 items-start">
+                <i class="fa-solid fa-ticket text-slate-400 mt-1"></i>
+                <div class="flex-1 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                  <p class="font-bold text-slate-800">Korakukan (코라쿠칸)</p>
+                  <a href="https://buly.kr/1RHQB4H" target="_blank" class="inline-flex items-center gap-1 text-xs bg-winter-50 text-winter-700 px-3 py-1.5 rounded-full hover:bg-winter-100 transition whitespace-nowrap"><i class="fa-solid fa-map-location-dot"></i> 지도 보기</a>
+                </div>
+              </li>
+              <li class="flex gap-4 items-start">
+                <i class="fa-solid fa-store text-slate-400 mt-1"></i>
+                <div class="flex-1 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                  <p class="font-bold text-slate-800">Roadside Station Kazuno Antler</p>
+                  <a href="https://buly.kr/A48YF4f" target="_blank" class="inline-flex items-center gap-1 text-xs bg-winter-50 text-winter-700 px-3 py-1.5 rounded-full hover:bg-winter-100 transition whitespace-nowrap"><i class="fa-solid fa-map-location-dot"></i> 지도 보기</a>
+                </div>
+              </li>
+              <li class="flex gap-4 items-start">
+                <i class="fa-solid fa-gem text-slate-400 mt-1"></i>
+                <div class="flex-1 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                  <div>
+                    <p class="font-bold text-slate-800">오유 환상열석 (만자 / 노나카도)</p>
+                    <p class="text-slate-500 text-sm">Oyu Stone Circles (Manza & Nonakado)</p>
+                  </div>
+                  <div class="flex gap-2">
+                    <a href="https://buly.kr/BeNN4Tf" target="_blank" class="inline-flex items-center gap-1 text-xs bg-winter-50 text-winter-700 px-3 py-1.5 rounded-full hover:bg-winter-100 transition whitespace-nowrap"><i class="fa-solid fa-map-location-dot"></i> 만자</a>
+                    <a href="https://buly.kr/6Muddzb" target="_blank" class="inline-flex items-center gap-1 text-xs bg-winter-50 text-winter-700 px-3 py-1.5 rounded-full hover:bg-winter-100 transition whitespace-nowrap"><i class="fa-solid fa-map-location-dot"></i> 노나카도</a>
+                  </div>
+                </div>
+              </li>
+              <li class="flex gap-4 items-start pt-2">
+                <i class="fa-solid fa-bed text-winter-600 mt-1"></i>
+                <div class="flex-1 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                  <p class="font-bold text-slate-800">료칸 복귀 및 휴식</p>
+                  <a href="https://buly.kr/4QqIr4e" target="_blank" class="inline-flex items-center gap-1 text-xs bg-winter-600 text-white px-3 py-1.5 rounded-full hover:bg-winter-700 transition whitespace-nowrap"><i class="fa-solid fa-location-arrow"></i> 경로 보기</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Day 3 -->
+        <div class="bg-white rounded-2xl shadow-md p-6 md:p-8 flex flex-col md:flex-row gap-8 border border-winter-100 hover:border-winter-300 transition-colors">
+          <div class="md:w-1/4 shrink-0">
+            <div class="text-winter-600 font-bold text-lg mb-1">DAY 3</div>
+            <div class="text-slate-800 font-black text-3xl mb-2">12. 25 (금)</div>
+            <div class="text-slate-500 text-sm font-medium">시내 이동 & 크리스마스</div>
+          </div>
+          <div class="md:w-3/4">
+            <ul class="space-y-4">
+              <li class="flex gap-4 items-start">
+                <i class="fa-solid fa-suitcase-rolling text-slate-400 mt-1"></i>
+                <p class="font-bold text-slate-800 mt-0.5">료칸 체크아웃</p>
+              </li>
+              <li class="flex gap-4 items-start">
+                <i class="fa-solid fa-utensils text-slate-400 mt-1"></i>
+                <div class="flex-1 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                  <p class="font-bold text-slate-800">도마닌 중식</p>
+                  <a href="https://buly.kr/58VKmMT" target="_blank" class="inline-flex items-center gap-1 text-xs bg-winter-50 text-winter-700 px-3 py-1.5 rounded-full hover:bg-winter-100 transition whitespace-nowrap"><i class="fa-solid fa-map-location-dot"></i> 지도 보기</a>
+                </div>
+              </li>
+              <li class="flex gap-4 items-start">
+                <i class="fa-solid fa-car-side text-slate-400 mt-1"></i>
+                <div class="flex-1 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                  <p class="font-bold text-slate-800">렌터카 반납</p>
+                  <a href="https://buly.kr/NmsIqZ4" target="_blank" class="inline-flex items-center gap-1 text-xs bg-winter-50 text-winter-700 px-3 py-1.5 rounded-full hover:bg-winter-100 transition whitespace-nowrap"><i class="fa-solid fa-map-location-dot"></i> 지도 보기</a>
+                </div>
+              </li>
+              <li class="flex gap-4 items-start">
+                <i class="fa-solid fa-hotel text-slate-400 mt-1"></i>
+                <div class="flex-1 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                  <p class="font-bold text-slate-800">호텔 체크인</p>
+                  <p class="text-slate-500 text-sm sm:hidden">리치몬드 호텔 아키타 에키마에</p>
+                  <div class="hidden sm:block text-slate-500 text-sm">리치몬드 호텔 아키타 에키마에</div>
+                  <a href="https://buly.kr/FAgWhPm" target="_blank" class="inline-flex items-center gap-1 text-xs bg-winter-50 text-winter-700 px-3 py-1.5 rounded-full hover:bg-winter-100 transition whitespace-nowrap"><i class="fa-solid fa-map-location-dot"></i> 지도 보기</a>
+                </div>
+              </li>
+              <li class="flex gap-4 items-start pt-2">
+                <i class="fa-solid fa-wine-glass text-winter-600 mt-1"></i>
+                <div class="flex-1 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                  <p class="font-bold text-slate-800">아키타 나가야 사카바 석식</p>
+                  <a href="https://buly.kr/74ZffnQ" target="_blank" class="inline-flex items-center gap-1 text-xs bg-winter-600 text-white px-3 py-1.5 rounded-full hover:bg-winter-700 transition whitespace-nowrap"><i class="fa-solid fa-location-arrow"></i> 경로 보기</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Day 4 -->
+        <div class="bg-white rounded-2xl shadow-md p-6 md:p-8 flex flex-col md:flex-row gap-8 border border-winter-100 hover:border-winter-300 transition-colors">
+          <div class="md:w-1/4 shrink-0">
+            <div class="text-winter-600 font-bold text-lg mb-1">DAY 4</div>
+            <div class="text-slate-800 font-black text-3xl mb-2">12. 26 (토)</div>
+            <div class="text-slate-500 text-sm font-medium">시내 명소 및 미식</div>
+          </div>
+          <div class="md:w-3/4">
+            <ul class="space-y-4">
+              <li class="flex gap-4 items-start">
+                <i class="fa-solid fa-street-view text-slate-400 mt-1"></i>
+                <div class="flex-1 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                  <p class="font-bold text-slate-800">사탕키스 골목 (すゞらん通り)</p>
+                  <a href="https://buly.kr/CM2P6Ia" target="_blank" class="inline-flex items-center gap-1 text-xs bg-winter-50 text-winter-700 px-3 py-1.5 rounded-full hover:bg-winter-100 transition whitespace-nowrap"><i class="fa-solid fa-map-location-dot"></i> 지도 보기</a>
+                </div>
+              </li>
+              <li class="flex gap-4 items-start">
+                <i class="fa-solid fa-fish text-slate-400 mt-1"></i>
+                <div class="flex-1 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                  <div>
+                    <p class="font-bold text-slate-800">초밥집 중식</p>
+                    <p class="text-slate-500 text-sm">Akita Harbor 秋田の恵み鮨処 秋田港</p>
+                  </div>
+                  <a href="https://buly.kr/B7d6EeU" target="_blank" class="inline-flex items-center gap-1 text-xs bg-winter-50 text-winter-700 px-3 py-1.5 rounded-full hover:bg-winter-100 transition whitespace-nowrap"><i class="fa-solid fa-map-location-dot"></i> 지도 보기</a>
+                </div>
+              </li>
+              <li class="flex gap-4 items-start">
+                <i class="fa-brands fa-pagelines text-slate-400 mt-1"></i>
+                <div class="flex-1 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                  <p class="font-bold text-slate-800">Senshū Park (센슈 공원)</p>
+                  <a href="https://buly.kr/EdwFr20" target="_blank" class="inline-flex items-center gap-1 text-xs bg-winter-50 text-winter-700 px-3 py-1.5 rounded-full hover:bg-winter-100 transition whitespace-nowrap"><i class="fa-solid fa-map-location-dot"></i> 지도 보기</a>
+                </div>
+              </li>
+              <li class="flex gap-4 items-start">
+                <i class="fa-solid fa-gift text-slate-400 mt-1"></i>
+                <div class="flex-1 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                  <p class="font-bold text-slate-800">아키타현산품 플라자 '아키타노'</p>
+                  <a href="https://buly.kr/5qAMoHp" target="_blank" class="inline-flex items-center gap-1 text-xs bg-winter-50 text-winter-700 px-3 py-1.5 rounded-full hover:bg-winter-100 transition whitespace-nowrap"><i class="fa-solid fa-map-location-dot"></i> 지도 보기</a>
+                </div>
+              </li>
+              <li class="flex gap-4 items-start pt-2">
+                <i class="fa-solid fa-bed text-winter-600 mt-1"></i>
+                <div class="flex-1 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                  <p class="font-bold text-slate-800">호텔 복귀 및 휴식</p>
+                  <a href="https://buly.kr/DPWwzNf" target="_blank" class="inline-flex items-center gap-1 text-xs bg-winter-600 text-white px-3 py-1.5 rounded-full hover:bg-winter-700 transition whitespace-nowrap"><i class="fa-solid fa-location-arrow"></i> 경로 보기</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Day 5 -->
+        <div class="bg-white rounded-2xl shadow-md p-6 md:p-8 flex flex-col md:flex-row gap-8 border border-winter-100 hover:border-winter-300 transition-colors">
+          <div class="md:w-1/4 shrink-0">
+            <div class="text-winter-600 font-bold text-lg mb-1">DAY 5</div>
+            <div class="text-slate-800 font-black text-3xl mb-2">12. 27 (일)</div>
+            <div class="text-slate-500 text-sm font-medium">귀국</div>
+          </div>
+          <div class="md:w-3/4">
+            <ul class="space-y-4">
+              <li class="flex gap-4 items-start">
+                <i class="fa-solid fa-person-walking-luggage text-slate-400 mt-1"></i>
+                <p class="font-bold text-slate-800 mt-0.5">호텔 체크아웃</p>
+              </li>
+              <li class="flex gap-4 items-start">
+                <i class="fa-solid fa-bus text-slate-400 mt-1"></i>
+                <div class="flex-1 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                  <div>
+                    <p class="font-bold text-slate-800">아키타역 공항리무진 탑승</p>
+                    <p class="text-slate-500 text-sm">1번 승강장 (1,200엔 / 06:50 또는 07:05 탑승)</p>
+                  </div>
+                  <a href="https://buly.kr/6157nDu" target="_blank" class="inline-flex items-center gap-1 text-xs bg-winter-50 text-winter-700 px-3 py-1.5 rounded-full hover:bg-winter-100 transition whitespace-nowrap"><i class="fa-solid fa-map-location-dot"></i> 승강장 지도</a>
+                </div>
+              </li>
+              <li class="flex gap-4 items-start">
+                <i class="fa-solid fa-train-subway text-slate-400 mt-1"></i>
+                <div>
+                  <p class="font-bold text-slate-800">이타미 공항 도착 및 고베 공항 환승 이동</p>
+                  <p class="text-slate-500 text-sm">산노미야역 경유, 포트라이너 탑승 (상단 환승 가이드 참조)</p>
+                </div>
+              </li>
+              <li class="flex gap-4 items-start">
+                <i class="fa-solid fa-mug-hot text-slate-400 mt-1"></i>
+                <div>
+                  <p class="font-bold text-slate-800">간사이 공항 내 라운지 중식</p>
+                  <p class="text-slate-500 text-sm">출발 대기 중 점심 식사 및 휴식</p>
+                </div>
+              </li>
+              <li class="flex gap-4 items-start pt-2">
+                <i class="fa-solid fa-plane-arrival text-winter-600 mt-1"></i>
+                <p class="font-bold text-slate-800 mt-0.5">귀국</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-slate-900 text-slate-400 py-12 text-center border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="text-2xl text-winter-400 mb-4"><i class="fa-solid fa-snowflake"></i></div>
+      <h2 class="text-white font-bold text-xl tracking-wide mb-2">AKITA WINTER TRIP</h2>
+      <p class="text-sm">2026년 12월 23일 - 12월 27일</p>
+      <div class="mt-8 border-t border-slate-800 pt-8 text-sm">
+        &copy; 2026 Akita Travel Itinerary. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
