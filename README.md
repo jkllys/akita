@@ -1,2 +1,0 @@
-# akita
-akita_trip
